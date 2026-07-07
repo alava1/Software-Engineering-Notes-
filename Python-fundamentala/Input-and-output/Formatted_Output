@@ -1,0 +1,164 @@
+"""
+=========================================================
+Python Fundamentals
+Chapter 04: Input and Output
+
+File: formatted_output.py
+
+Author: Lawal Yunusa
+
+Description:
+This program demonstrates different ways to format output
+in Python. Well-formatted output makes programs easier to
+read and gives applications a more professional appearance.
+
+Learning Objectives:
+- Understand string formatting
+- Use f-strings
+- Use the format() method
+- Use %-style formatting
+- Format numbers and currency
+- Align text for better readability
+=========================================================
+"""
+
+# =========================================================
+# Program Title
+# =========================================================
+
+print("=" * 60)
+print("PYTHON FORMATTED OUTPUT")
+print("=" * 60)
+
+# =========================================================
+# Variables
+# =========================================================
+
+name = "Lawal Yunusa"
+age = 22
+country = "Nigeria"
+salary = 250000.75
+gpa = 4.67
+
+# =========================================================
+# Using f-Strings (Recommended)
+# =========================================================
+
+print("\n1. Formatted Strings (f-Strings)")
+print("-" * 60)
+
+print(f"Name    : {name}")
+print(f"Age     : {age}")
+print(f"Country : {country}")
+
+# =========================================================
+# Using format()
+# =========================================================
+
+print("\n2. format() Method")
+print("-" * 60)
+
+print("Name: {}".format(name))
+print("Age: {}".format(age))
+print("Country: {}".format(country))
+
+# =========================================================
+# Using Percentage Formatting
+# =========================================================
+
+print("\n3. Percentage (%) Formatting")
+print("-" * 60)
+
+print("Name: %s" % name)
+print("Age: %d" % age)
+print("GPA: %.2f" % gpa)
+
+# =========================================================
+# Decimal Formatting
+# =========================================================
+
+print("\n4. Decimal Formatting")
+print("-" * 60)
+
+print(f"GPA: {gpa:.2f}")
+print(f"Salary: {salary:.2f}")
+
+# =========================================================
+# Currency Formatting
+# =========================================================
+
+print("\n5. Currency Formatting")
+print("-" * 60)
+
+print(f"Monthly Salary: ₦{salary:,.2f}")
+
+# =========================================================
+# Text Alignment
+# =========================================================
+
+print("\n6. Text Alignment")
+print("-" * 60)
+
+print(f"{'Name':<20}{'Score':>10}")
+print("-" * 30)
+
+print(f"{'Lawal':<20}{95:>10}")
+print(f"{'Amina':<20}{88:>10}")
+print(f"{'David':<20}{91:>10}")
+
+# =========================================================
+# Real-World Example
+# =========================================================
+
+print("\n" + "=" * 60)
+print("STUDENT REPORT")
+print("=" * 60)
+
+print(f"Student Name : {name}")
+print(f"Country      : {country}")
+print(f"Age          : {age}")
+print(f"GPA          : {gpa:.2f}")
+
+if gpa >= 4.5:
+    grade = "Excellent"
+elif gpa >= 3.5:
+    grade = "Very Good"
+else:
+    grade = "Good"
+
+print(f"Performance  : {grade}")
+
+# =========================================================
+# Best Practices
+# =========================================================
+
+print("\n" + "=" * 60)
+print("BEST PRACTICES")
+print("=" * 60)
+
+print("✔ Prefer f-strings in modern Python.")
+print("✔ Keep output aligned and readable.")
+print("✔ Format numbers appropriately.")
+print("✔ Display currency with commas and decimals.")
+print("✔ Use meaningful labels in reports.")
+
+# =========================================================
+# Summary
+# =========================================================
+
+print("\n" + "=" * 60)
+print("SUMMARY")
+print("=" * 60)
+
+print("f''        -> Modern string formatting")
+print("format()   -> Flexible formatting")
+print("%         -> Legacy formatting")
+print(":.2f      -> Two decimal places")
+print(":,        -> Thousands separator")
+print("< >       -> Text alignment")
+
+# =========================================================
+# End of Program
+# =========================================================
+
+print("\nProgram completed successfully.")
