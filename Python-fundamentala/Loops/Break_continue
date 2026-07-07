@@ -1,0 +1,21 @@
+# break_continue.py
+# Topic: break and continue statements
+
+print("=== Break & Continue Demo ===\n")
+
+# Example of 'break'
+print("Using 'break' - Stop when we find 7:")
+for num in range(1, 11):
+    if num == 7:
+        print("Found 7! Stopping loop.")
+        break                    # Exit the loop completely
+    print(num)
+
+print("\n" + "="*30)
+
+# Example of 'continue'
+print("Using 'continue' - Skip even numbers:")
+for num in range(1, 11):
+    if num % 2 == 0:             # If number is even
+        continue                 # Skip to next iteration
+    print(f"Odd number: {num}")
