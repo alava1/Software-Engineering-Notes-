@@ -1,0 +1,180 @@
+"""
+=========================================================
+Python Fundamentals
+Chapter 02: Variables and Data Types
+
+File: naming_conventions.py
+
+Author: Lawal Yunusa
+
+Description:
+This program demonstrates Python naming conventions based
+on the PEP 8 Style Guide. Following these conventions makes
+code easier to read, maintain, and collaborate on.
+
+Learning Objectives:
+- Understand Python naming conventions
+- Learn PEP 8 naming standards
+- Write readable and maintainable code
+=========================================================
+"""
+
+# =========================================================
+# Variable Naming
+# =========================================================
+
+print("=" * 60)
+print("VARIABLE NAMING")
+print("=" * 60)
+
+student_name = "Lawal Yunusa"
+student_age = 22
+is_graduated = False
+account_balance = 1500.75
+
+print("Student Name:", student_name)
+print("Student Age:", student_age)
+print("Graduated:", is_graduated)
+print("Account Balance:", account_balance)
+
+# =========================================================
+# Constant Naming
+# =========================================================
+
+print("\n" + "=" * 60)
+print("CONSTANT NAMING")
+print("=" * 60)
+
+PI = 3.14159
+MAX_USERS = 100
+DATABASE_NAME = "student_db"
+
+print("PI =", PI)
+print("MAX_USERS =", MAX_USERS)
+print("DATABASE_NAME =", DATABASE_NAME)
+
+# =========================================================
+# Function Naming
+# =========================================================
+
+print("\n" + "=" * 60)
+print("FUNCTION NAMING")
+print("=" * 60)
+
+def calculate_area(length, width):
+    """Calculate the area of a rectangle."""
+    return length * width
+
+area = calculate_area(8, 5)
+print("Area:", area)
+
+# =========================================================
+# Class Naming
+# =========================================================
+
+print("\n" + "=" * 60)
+print("CLASS NAMING")
+print("=" * 60)
+
+class Student:
+    """A simple Student class."""
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_information(self):
+        print(f"Student: {self.name}")
+        print(f"Age: {self.age}")
+
+student = Student("Lawal Yunusa", 22)
+student.display_information()
+
+# =========================================================
+# Module Naming
+# =========================================================
+
+print("\n" + "=" * 60)
+print("MODULE NAMING")
+print("=" * 60)
+
+print("Good module names:")
+print("student_management.py")
+print("data_processing.py")
+print("file_handler.py")
+
+# =========================================================
+# Package Naming
+# =========================================================
+
+print("\n" + "=" * 60)
+print("PACKAGE NAMING")
+print("=" * 60)
+
+print("Good package names:")
+print("utilities")
+print("database")
+print("authentication")
+print("algorithms")
+
+# =========================================================
+# Bad Naming Examples
+# =========================================================
+
+print("\n" + "=" * 60)
+print("BAD NAMING EXAMPLES")
+print("=" * 60)
+
+print("❌ x")
+print("❌ abc")
+print("❌ temp1")
+print("❌ myVariable")
+print("❌ STUDENTname")
+
+# =========================================================
+# Good Naming Examples
+# =========================================================
+
+print("\n" + "=" * 60)
+print("GOOD NAMING EXAMPLES")
+print("=" * 60)
+
+print("✔ student_name")
+print("✔ calculate_average")
+print("✔ total_marks")
+print("✔ MAX_ATTEMPTS")
+print("✔ UserAccount")
+
+# =========================================================
+# PEP 8 Summary
+# =========================================================
+
+print("\n" + "=" * 60)
+print("PEP 8 NAMING SUMMARY")
+print("=" * 60)
+
+print("Variables  -> snake_case")
+print("Functions  -> snake_case")
+print("Classes    -> PascalCase")
+print("Constants  -> UPPER_CASE")
+print("Modules    -> snake_case")
+print("Packages   -> lowercase")
+
+# =========================================================
+# Best Practices
+# =========================================================
+
+print("\nBest Practices")
+print("-" * 60)
+
+print("• Use meaningful names.")
+print("• Avoid abbreviations.")
+print("• Keep names readable.")
+print("• Follow PEP 8.")
+print("• Be consistent across the project.")
+
+# =========================================================
+# End of Program
+# =========================================================
+
+print("\nProgram completed successfully.")
